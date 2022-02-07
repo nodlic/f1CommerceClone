@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Red+Hat+Display:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>F1CommerceClone</title>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact--telephone">
+            <img class="icon" src="./images/icon-telefone.png" alt="Ícone de telefone">
+            <p>RS: (51) 3588.9968 | SP: (11) 4063.3077</p>
+        </div>
+        <div class="contact--blog">
+            <img class="icon" src="./images/icon-blog.png" alt="Ícone de blog">
+            <p>Blog</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <img src="./images/logo.png" alt="Logo" class="logo">
+        <ul class="header--options">
+            <li class="options--products">
+                <a href="#">Produtos</a>
+                <span class="arrowDown"></span>
+            </li>
+            <li><a href="#">Quem Somos</a></li class="options--whoWeAre">
+            <li><a href="#">Contato</a></li class="options--contact">
+        </ul>
+        <a href="#" class="requestQuote">
+            <p>Solicitar Orçamento </p>
+            <img src="./images/icon-arrow.png" alt="Ícone de seta" class="iconArrow"></img></a>
+    </header>
+
+    <section id="home">
+        <div onClick="toBack()" class="buttonBack"><img src="./images/icon-next.png" alt="ícone de volar"></div>
+        <div onClick="toNext()" class="buttonNext"><img src="./images/icon-next.png" alt="ícone de avançar"></div>
+        <div class="home--content" style="transform: translateX(-100vw) ">
+            <div class="home--info" value="0">
+                <div class="home--info--textArea">
+                    <h2 class="home--info--title">E-commerce <br><span>B2B</span></h2>
+                <p class="home--info--text">
+                    Gerencie de maneira simplificada as diversas variáveis 
+                    envolvidas no processo de venda entre empresas com a plataforma 
+                    <b>especialista</b> em <b>e-commerce B2B.</b>
+                </p>
+                <a href="#" class="home--info--buttonKnowMore button">
+                    <p>Saiba mais</p>
+                    <img src="./images/icon-arrow.png" alt="Ícone de seta"></img></a>
+                </a>
+            </div>
+            <div class="home--info--banner">
+                <img src="./images/home-banner-1.png" alt="imagem de container">
+            </div>
+            </div>
+        
+            <div class="home--info" value="1">
+            <div class="home--info--textArea">
+                <h2 class="home--info--title">Venda nos <br><span>Marketplaces</span></h2>
+                <p class="home--info--text">
+                    F1 Hub é a ferramenta ideal para operação, vendas e 
+                    gestão dos seus produtos nos principais marketplaces 
+                    do mercado.
+                </p>
+                <a href="#" class="home--info--buttonKnowMore button">
+                    <p>Saiba mais</p>
+                    <img src="./images/icon-arrow.png" alt="Ícone de seta" class="iconArrow"></img></a>
+                </a>
+            </div>  
+            <div class="home--info--banner">
+                <img src="./images/home-banner-2.png" alt="imagem de mulher de frente para loja">
+            </div>              
+            </div>
+        
+            <div class="home--info" value="2">
+            <div class="home--info--textArea">
+                <h2 class="home--info--title">E-commerce <br><span>B2C</span></h2>
+                <p class="home--info--text">
+                    Recursos especializados para atender todas as necessidades 
+                    do lojista e oferecer a melhor experiência de compra para o 
+                    cliente.
+                </p>
+                <a href="#" class="home--info--buttonKnowMore button">
+                    <p>Saiba mais</p>
+                    <img src="./images/icon-arrow.png" alt="Ícone de seta" class="iconArrow"></img></a>
+                </a>
+            </div>
+            <div class="home--info--banner">
+                <img src="./images/home-banner-3.png" alt="imagem de celular">
+            </div>
+            </div>
+    </div>
+    </section>
+    <div class="home--infoPageLink">
+        <button onclick="changePage(this)" value="2" class="infoPageLink--page selected"></button>
+        <button onclick="changePage(this)" value="3" class="infoPageLink--page"></button>
+        <button onclick="changePage(this)" value="1" class="infoPageLink--page"></button>
+    </div>
+
+    <section id="servicesOptions">
+        <h2 class="servicesOptions--title">A F1 Commerce atua há mais de 10 anos no mercado de
+        <br><span>E-Commerce auxiliando empresas na digitalização</span><br>
+        de seus negócios.</h2>
+        <p class="servicesOptions--text">Precisa iniciar uma operação de e-commerce ou migrar de plataforma? Nós podemos ajudar!</p>
+        <div class="servicesOptions--cards">
+            <div class="servicesOptions--card">
+                <img class="servicesOptions--icon" src="./images/icon-vender-final.png" alt="">
+                <p class="servicesOptions">Vender para Consumidor Final</p>
+                <a href=""><img class="iconArrow" src="./images/icon-arrow.png" alt="Seta"></a>
+            </div>
+            <div class="servicesOptions--card">
+                <img class="servicesOptions--icon" src="./images/icon-vender-empresas.png" alt="">
+                <p class="servicesOptions">Vender para outras Empresas</p>
+                <a href=""><img class="iconArrow" src="./images/icon-arrow.png" alt="Seta"></a>
+            </div>
+            <div class="servicesOptions--card">
+                <img class="servicesOptions--icon" src="./images/icon-vender-final.png" alt="">
+                <p class="servicesOptions">Vender em Marketplaces</p>
+                <a href=""><img class="iconArrow" src="./images/icon-arrow.png" alt="Seta"></a>
+            </div>
+            <div class="servicesOptions--card">
+                <img class="servicesOptions--icon" src="./images/icon-marketplace.png" alt="">
+                <p class="servicesOptions">Ser um Marketplace</p>
+                <a href=""><img class="iconArrow" src="./images/icon-arrow.png" alt="Seta"></a>
+            </div>
+            <div class="servicesOptions--card">
+                <img class="servicesOptions--icon" src="./images/icon-clube-assinatura.png" alt="">
+                <p class="servicesOptions">Ser um Clube de Assinatura</p>
+                <a href=""><img class="iconArrow" src="./images/icon-arrow.png" alt="Seta"></a>
+            </div>
+        </div>
+    </section>
+    <section id="clientCompanies">
+        <h2 class="clientCompanies--title">Eles acreditam em nós</h2>
+        
+        <div class="clientCompanies--list">
+            <div class="buttonBack"><img src="./images/icon-next.png" alt="ícone de volar"></div>
+            <div class="buttonNext"><img src="./images/icon-next.png" alt="ícone de avançar"></div>
+            <div class="clientCompanies--list--items">
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/mam.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/mazer.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/coldmix.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/fgv_editora.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/frahm.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/cromus.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/cultura_inglesa.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/web_continental_2.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/livrarias_curitiba.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/plenobras.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/khronos.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/reuters.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/caim.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/pro_shows.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/ferramentas_gerais.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/sanremo.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/schulz.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/unidasul.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/alpar.png" alt=""></div>
+                <div class="clientCompanies--list--item"><img src="./images/CompaniesLogo/jbl.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualities">
+        <h2 class="qualities--title"><span>Saiba como ajudamos</span> nossos clientes
+            <br>Porque escolher a F1 Commerce</h2>
+        
+        <div class="qualities--content">
+
+            <div class="qualities--topicsLeft">
+                <div class="qualities--topic">
+                    <img src="./images/icon-dashboard.png" alt="">
+                    <h3 class="topic--title">Dashboard e relatórios</h3>
+                    <p class="topic--text">Gerencie todas as transações e acompanhe os resultados através 
+                    de um dashboard completo e intuitivo.</p>
+                </div>
+                <div class="qualities--topic">
+                    <img src="./images/icon-extensoes.png" alt="">
+                    <h3 class="topic--title">Recursos Especializados</h3>
+                    <p class="topic--text">Ferramentas robustas, dezenas de módulos nativos e integrações 
+                    via API para projetos B2B, B2C e Marketplaces.</p>
+                </div>
+            </div>
+            <div class="qualities--banner">
+                <img src="./images/porque_escolher.png" alt="">
+            </div>
+            <div class="qualities--topicsRight">
+                <div class="qualities--topic">
+                    <img src="./images/icon-suporte.png" alt="">
+                    <h3 class="topic--title">Suporte e Evolução</h3>
+                    <p class="topic--text">Atualizações frequentes da plataforma e uma equipe especializada 
+                    sempre pronta para auxiliar.
+                    </p>
+                </div>
+                <div class="qualities--topic">
+                    <img src="./images/icon-infraestrutura.png" alt="">
+                    <h3 class="topic--title">Infraestrutura</h3>
+                    <p class="topic--text">Datacenters de alta disponibilidade e escaláveis visando a performance 
+                    e tranquilidade da operação.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="qualities--button button"><p>Conheça a plataforma F1 commerce</p> <img src="./images/icon-arrow.png" alt=""></a>
+    </section>
+
+    <section id="specialistContact">
+        <div class="specialistContact--content">
+
+            <div class="specialistContact--title">Precisa iniciar uma operação de
+                e-commerce ou migrar de plataforma?
+                <br><span>Nós podemos ajudar!</span>
+            </div>
+            <a href="#" alt="" class="specialistContact--button button"><p>Fale com um especialista</p> <img src="./images/icon-arrow.png" alt=""></a>
+        </div>
+        <div class="specialistContact--banner"><img src="./images/rapaz.png" alt=""></div>
+    </section>
+
+    <section id="about">
+        <div class="about--content">
+            <div class="about--card">
+                <img src="./images/icon-about-baloon.png" alt="" class="about--icon">
+                <p class="about--cardData">+10 anos</p>
+                <p class="about--cardText">atuando no mercado</p>
+            </div>
+            <div class="about--card">
+                <img src="./images/icon-about-computer.png" alt="" class="about--icon">
+                <p class="about--cardData">+600 lojas virtuais</p>
+                <p class="about--cardText">em operação</p>
+            </div>
+            <div class="about--card">
+                <img src="./images/icon-about-newspaper.png" alt="" class="about--icon">
+                <p class="about--cardData">+120 mil</p>
+                <p class="about--cardText">pedidos mensais</p>
+            </div>
+            <div class="about--card">
+                <img src="./images/icon-about-money.png" alt="" class="about--icon">
+                <p class="about--cardData">+50 milhões</p>
+                <p class="about--cardText">em vendas mensais pela plataforma</p>
+            </div>
+        </div>
+        <div class="about--knowMore">
+            <div class="about--knowMore--banner"><img src="./images/company-1.png" alt=""></div>
+            <a href="" class="about--knowMore--button button">
+                <p>Saiba mais sobre a empresa</p>
+                <img src="./images/icon-arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+    <section id="receiveNews">
+        <div class="receiveNews--title">
+            <img src="./images/icon-novidades.png" alt="" class="receiveNews--icon">
+            <h3 class="receiveNews--titleText">
+                Novidades sobre<br>
+                e-commerce?</h3>
+        </div>
+        <form action="" class="receiveNews--form">
+            <div class="receiveNews--inputs">
+                <input type="text" placeholder="seu nome">
+                <input type="email" placeholder="seu e-mail">
+            </div>
+            <button class="receiveNews--button button" type="submit"><p>Quero receber</p> <img src="./images/icon-arrow.png" alt=""></button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer--content">
+            <div class="footer--companyData">
+                <img src="images/logo-footer.png" alt="" class="footer--logo"></img>
+                <div class="footer--text">
+                    Especializada em projetos B2B, atua há mais de 10 anos no desenvolvimento 
+                    de plataforma para o mercado de comércio eletrônico, com mais de 600 lojas 
+                    em operação.
+                </div>
+                <div class="footer--social">
+                    <a href="#" class="footer--socialIcon"><img src="./images/icon-facebook.png" alt=""></a>
+                    <a href="#" class="footer--socialIcon"><img src="./images/icon-instagram.png" alt=""></a>
+                    <a href="#" class="footer--socialIcon"><img src="./images/icon-youtube.png" alt=""></a>
+                    <a href="#" class="footer--socialIcon"><img src="./images/icon-linkedin.png" alt=""></a>
+                    <a href="#" class="footer--socialIcon"><img src="./images/icon-wordpress.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer--links">
+                <ul class="footer--list">
+                    <h3>Institucional</h3>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="footer--list">
+                    <h3>Produtos</h3>
+                    <li><a href="">Conheça a Plataforma F1</a></li>
+                    <li><a href="">E-commerce B2B</a></li>
+                    <li><a href="">E-commerce B2C</a></li>
+                    <li><a href="">Hub de Marketplace</a></li>
+                    <li><a href="">Migração de Plataforma</a></li>
+                    <li class="footer--list--segments"><p>Segmentos</p> <div class="arrowDown"></div></li>
+                    <li class="footer--list--needs"><p>Necessidades</p> <div class="arrowDown"></div></li>
+                </ul>
+                <ul class="footer--list">
+                    <h3>Contato</h3>
+                    <li>RS: (51) 3588.9968</li>
+                    <li>SP: (11) 4063.3077</li>
+                    <li>atendimento@f1commerce.com</li>
+                    <div class="footer--list--button">
+                        <a href="" class="button">
+                            <span>Fale conosco</span>
+                            <img src="./images/icon-arrow.png" alt="">
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer--partnerCompanies">
+            <div class="footer--companie">
+                Financie sua loja com: <img src="./images/bndes.png" alt="">
+            </div>
+            <div class="footer--companie">
+                Matenedor oficial: <img src="./images/ecommerce_brasil.png" alt="">
+            </div>
+            <div class="footer--companie">
+                Sede: <img src="./images/tecnosinos.png" alt="">
+            </div>
+            <div class="footer--companie">
+                Associada: <img src="./images/comschool.png" alt="">
+            </div>
+        </div>
+        <div class="footer--f1commerce">
+            <p>© 2013 - 2022 F1 Commerce</p>
+            <button class="backToTop"></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
